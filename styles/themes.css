@@ -10,6 +10,7 @@
   --title-weight: 700;
   --main-color: #fff;
   --accent-color: #000;
+  --button-color: #fff; 
 }
 
 :root.theme-dark {
@@ -17,6 +18,7 @@
   --title-weight: 785;
   --main-color: #000;
   --accent-color: #00cc14;
+  --button-color: #00cc14; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,5 +28,6 @@
     --title-weight: 785;
     --main-color: #000;
     --accent-color: #00cc14;
+    --button-color: #00cc14; 
   }
 }
