@@ -473,7 +473,9 @@
       </ul>
     </main>
     <footer class="footer">
-      <button class="footer__button card__like-button">
+      <button class="footer__button" type="button" 
+      onclick="window['dialog__save'].showModal();" 
+      aria-controls="dialog__save">
         <svg xmlns="http://www.w3.org/2000/svg" class="floppy__footer" viewBox="0 0 29 28">
           <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
         </svg>
@@ -482,6 +484,17 @@
         </span>
       </button>
     </footer>
+    <dialog id="dialog__save">
+      <svg xmlns="http://www.w3.org/2000/svg" class="floppy__footer" viewBox="0 0 29 28">
+        <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
+      </svg>
+      <p class="dialog__text">
+        Вставьте
+        дискету, чтобы продолжить
+      </p>
+      <button class="dialog__button" type="button" 
+      onclick="window['dialog__save'].close()"><span class="button__text">Ок</span></button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
