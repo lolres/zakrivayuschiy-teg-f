@@ -307,7 +307,7 @@
 }
 
 .card__like-button {
-  background-color: transparent;
+  background-color: var(--main-color);
   border: 2px solid var(--accent-color);
   padding: 8px 35px;
   box-shadow: none;
@@ -391,6 +391,7 @@
   height: 28px;
   mix-blend-mode: difference;
   fill: var(--button-color);
+  color: var(--button-color);
 }
 
 .sparks {
